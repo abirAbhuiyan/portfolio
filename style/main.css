@@ -60,7 +60,7 @@ a {
   }
   
   .learn-btn {
-    background-color: #4CAF50;
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     margin-top: 20px;
@@ -72,7 +72,8 @@ a {
   }
   
   .learn-btn:hover {
-    background-color: #45a049;
+    background-color: #fff;
+    color: #000;
   }
   
 
