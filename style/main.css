@@ -1,0 +1,212 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+    background: url('../assets/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .hero .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #typing-container {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    white-space: pre-line;
+  }
+  
+  #signature {
+    width: 700px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-top: 20px;
+  }
+  
+  .learn-btn {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .learn-btn:hover {
+    background-color: #45a049;
+  }
+  
+
+/* Journey Section */
+.journey {
+  padding: 60px 20px;
+  text-align: center;
+  
+}
+
+.journey .journey-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journey-text {
+  flex: 1;
+  padding: 20px;
+  color: #fff;
+}
+
+.journey-text h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.journey-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.fade-in-image {
+  width: 350px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  max-width: 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  #typing-container {
+    font-size: 1.5rem;
+  }
+
+  #signature {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  .journey .journey-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .journey-text {
+    padding: 20px;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .fade-in-image {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
+
+/* Even smaller screens like phones in portrait */
+@media (max-width: 480px) {
+  .hero {
+    padding: 20px;
+  }
+
+  .journey-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Social media links in footer */
+footer .social-links {
+  margin-top: 10px;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+}
+
+footer .social-links a:hover {
+  color: #4CAF50;
+}
