@@ -112,7 +112,6 @@ a {
 
 .fade-in-image {
   width: 300px;
-  width: 350px;
   opacity: 0;
   transition: opacity 2s ease-in-out;
   max-width: 100%;
